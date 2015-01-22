@@ -1,0 +1,40 @@
+﻿
+    <script type="text/javascript">
+        initializeObject();
+        var NameObj;
+        var StatusID;
+        var arr_name = new Array("shengyanli@ctrip.com", "zhang.zj@ctrip.com");
+        var arr_id = new Array("img_01", "img_02");
+        function initializeObject() {
+            NameObj = new ActiveXObject('Name.NameCtrl.1');
+            NameObj.OnStatusChange = MyOnStatusChange;
+ 
+        }
+        function ShowOOUI(name) {
+            var obj = window.event.srcElement;
+            NameObj.ShowOOUI(name, 0, obj.offsetLeft + obj.offsetParent.offsetLeft + parseInt(obj.style.width), obj.offsetTop + obj.offsetParent.offsetTop);
+            NameObj.DoAccelerator();
+        }
+        function HideOOUI() {
+            NameObj.HideOOUI();
+        }
+
+        function get_lync_status(p_mailaddress) {
+            NameObj.GetStatus(arr_name[0], arr_id[0]);
+            NameObj.GetStatus(arr_name[1], arr_id[1]);
+        }
+
+        function MyOnStatusChange(name, status, id) {
+            alert(name+"|"+status+"|"+id);
+            var img = document.getElementById(id);
+            img.src = "images/" + status + ".png";
+        }
+
+
+</script>
+
+
+
+<input id="Button1" type="button" value="test" onclick="get_lync_status();" />
+<img alt="" src="" id="img_01" />
+<img alt="" src="" id="img_02" />
