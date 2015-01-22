@@ -1,0 +1,89 @@
+		#abc
+		{
+			background:url(head.jpg);
+			background-size:100% 100%;
+			-moz-background-size:100% 100%; /* 老版本的 Firefox */
+			background-repeat:no-repeat;
+			padding-top:41.49%;
+			background-position:center;
+		}
+		#header
+		{
+			background-color:#5d0000;
+			background-size:100% 100%;
+			-moz-background-size:100% 100%; /* 老版本的 Firefox */
+			background-repeat:no-repeat;
+			height:100px;
+			line-height:100px;
+			background-position:center;
+		}
+		#contact-page
+		{
+			background-color:#A52A2A;
+			background-size:100% 100%;
+			-moz-background-size:100% 100%; /* 老版本的 Firefox */
+			background-repeat:no-repeat;
+			padding-bottom:845px;
+
+		}
+		#begin
+		{
+			padding-left:5%;
+			font-size:230%;
+			color:yellow;
+			font-family:黑体;
+		}
+		.white-font
+		{
+			font-size:180%;
+			color:#fff;
+			font-family:华文细黑;
+		}
+		.button
+		{
+			width:40%;
+			height:100px;
+			background-color:#FFEC8B;
+			border-radius:5px;
+			-moz-box-shadow: 0px 10px 0px #ff9900; /* 老的 Firefox */
+			box-shadow: 0px 10px 0px #ef9900;
+			display:inline-block;
+			line-height: 100px;
+		}
+		.combox
+		{
+			border:3px solid white;
+			width:25%;
+			height:100px;
+			background-color:#861414;
+            line-height: 100px;
+			display:inline-block;
+		}
+		#search
+		{
+			margin:0 auto;
+			position: relative;
+			top:600px;
+			width:43%;
+			height:100px;
+			background-color:red;
+			-moz-box-shadow: 0px 10px 0px #ff9900; /* 老的 Firefox */
+			box-shadow: 0px 10px 0px #861414;
+			text-align:center;
+			line-height:100px;    
+		}
+		.triangle{
+			position: relative;
+			left:15%;
+            border-color: white #861414 #861414;
+            border-style: solid;
+            border-width: 18px;
+            font-size:0;
+            height: 0px;
+            line-height: 0px;
+            width: 0px;   
+        }
+		#choice{
+			color:#CDC9C9;
+			padding-left:30px;
+		}

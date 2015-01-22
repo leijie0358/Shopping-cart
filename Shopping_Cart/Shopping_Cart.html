@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Shopping Cart</title>
+		<style type="text/css">
+			<!--
+			html,body,form{width:100%;height:100%;margin:0;padding:0;}
+			*{margin:0;padding:0;}
+			img{
+			border-radius:50%;
+			position:   relative;
+			left:10px;top:60px;
+			}
+			p{
+			position:   relative;
+			left:15px;
+			top:150px;
+			color:#fff;
+			}
+			#box{
+				border:5px solid grey;
+				position:   relative;
+				left:100px;
+				top:200px;
+				width:500px;
+				height:200px;
+				text-align:center;
+				color:grey;
+				font-size:20px;
+				font-family:Arial;
+			}
+			-->
+		</style>
+	</head>
+	<body>
+		<table border="0" width="100%" height="100%">
+			<tr>
+				<TD id="blank" width="80%" height="100%"  valign="top">
+					<div id="paint">
+						<div id="box">
+							<br><br><br>click at the blank!click hear<br><br>
+							<font face="华文细黑">在空白处点击鼠标实现放入购物车效果</font>
+						</div>
+					</div>
+				</TD>
+				<TD width="3%" bgcolor="#000">
+
+
+						<img id="cart" src="cart.png" style="">
+
+						</img>
+					
+						<p> 购<br><br>物<br><br>车</p>  
+					
+				</TD>
+
+			</tr>
+		</table>
+		<script type="text/javascript">
+		var timer=new Array();					//动画的计时器					
+		var num=0;
+		document.getElementById("blank").onclick = function(e) {
+			e = e || window.event;			//在IE7版本以下，e没有属性，所以需要利用‘window.event’来获取鼠标的值
+
+			var paint = document.getElementById("paint");   //获取左边空白对象           
+			var svg_img = document.createElement("img");    //创建图片对象          
+			svg_img.src = "icon.png"; 						//设置图片来源	
+			svg_img.id="icon"+num;							//设置图片id，每次点击后num自增1，保证id值不重复
+			svg_img.style.position = 'absolute'; 			//设置绝对位置
+			svg_img.style.left=e.clientX+"px";				//e.clientX是鼠标位置的x坐标，设为图片的x坐标
+			svg_img.style.top=e.clientY+"px";              //设置图片y坐标为鼠标位置的y坐标
+			svg_img.style.width="25px";              		//设置图片初始宽度
+			svg_img.style.height="25px";  					//设置图片初始高度
+			
+			paint.appendChild(svg_img);						//将创建的图片对象添加为空白对象的子对象
+			var obj=svg_img;								
+//			 obj.setAttribute("style","left:"+event.pageX+";top:"+400);
+//			 alert(id.clientHeight);
+//			obj.style.left="200px";
+	//		obj.setAttribute("style","left:20px;top:30px;");
+			 var x=e.clientX;								//获取鼠标当前位置x坐标
+			 var y=e.clientY;								//获取鼠标当前位置y坐标
+			 var count=1;									//设置动画的计数器，每个周期自增1，当满足某条件时计时器停止，动画停止
+			 timer[obj.id]=setInterval(function (){count=doAnimate(obj,x,y,count);}, 10);//每个图片对象用其id生存单独的计时器timer[obj.id]，以免多个对象的计时器相互干扰。
+			 								//setInterval开启计时器，每10ms为一个周期，每个周期调用doAnimate()函数实现动画。
+			 num++;//每次点击后num自增1，形成独立的id
+		}  
+		function doAnimate(obj,x,y,count){//x,y表示鼠标点击的位置
+			if(count==100){					//每10ms为一个周期，每个周期count++，当count是100时，过了1s,清除对应的计时器，动画停止
+				clearInterval(timer[obj.id]);
+
+			}
+			var wide=document.body.clientWidth*0.97-x;//目标位置和鼠标点击位置x坐标的差
+			var height=document.body.clientHeight*0.5-y;//目标位置和鼠标点击位置y坐标的差
+			var w=25;	//图片宽度
+			var h=25;	//图片高度
+			if(count<=50){				//以时间中点为分界线，对于前半段时间，图片不断变大
+				var destw=w+w/50*count;	//由于每次调用count++,因此destw逐渐增大
+				var desth=h+h/50*count;
+			}
+			else{						//对于后半段时间，图片不断缩小
+				var destw=w+w/50*(100-count);	//(100-count)逐渐减小，因此destw逐渐减小
+				var desth=h+h/50*(100-count);
+			}
+			//以下利用抛物线函数(水平路程：s=s0+vt;垂直路程：s=1/2*gt*t-vt)，在这里，由于这里y向下为正，与现实中抛物体相反，所以符号相反。g是垂直加速度，
+			var destx=x+wide/100*count;		//水平行走路程	
+			v=(0.05*10000-height)/100.0;	//由于现实中g=9.8太大，所以我缩小为0.1,1/2*g就是0.05，根据路程和时间，算出垂直初始速度v
+			
+			var desty=parseInt(y+0.05*count*count-v*count);//由于每次count++,可以理解为时间，根据上面公式，求出垂直路程
+			//alert(v+" "+count+" "+desty);
+			var browser=navigator.appName;				//获取浏览器名称
+			var b_version=navigator.appVersion;			//获取浏览器版本号
+			var version=b_version.split(";");			//用;分隔
+			var trim_Version=version[1].replace(/[ ]/g,"");//去掉“[ ]”
+			if(browser=="Microsoft Internet Explorer" && (trim_Version=="MSIE7.0"|| trim_Version=="MSIE6.0"))//判断浏览器版本
+			{    																	//由于IE6和IE7不支持setAttribute方法，所以特殊处理
+				
+				obj.style.position = 'absolute'; //设置对象属性
+				obj.style.left=destx+"px";
+				obj.style.top=desty+"px"; 
+				obj.style.zIndex="10";			//设置堆叠顺序，使当前图片对象浮于购物车图片之上
+				obj.style.width=destw+"px";              
+				obj.style.height=desth+"px"; 
+			}
+			else
+				obj.setAttribute("style","position:absolute;left:"+destx+"px;top:"+desty+"px;z-index:10;width:"+destw+"px;height:"+desth+"px");
+			count++;							//每次调用count都自增1，可以理解为每次增加10ms。
+			return count;
+		}
+		</script>
+	</body>
+</html>
