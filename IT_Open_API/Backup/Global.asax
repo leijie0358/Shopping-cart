@@ -1,1 +1,0 @@
-<%@ Application Codebehind="Global.asax.cs" Inherits="IT_Open_API.Global" Language="C#" %>

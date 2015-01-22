@@ -1,5 +1,0 @@
-System.ArgumentException: A Command with that name already exists.
-   at Wicresoft.NRemedy.VS10Addin.VSAddinUtil.AddNamedCommand2(CommandBar[] cmdBars, String cmdName, String buttonText, String toolTip, Boolean useMsoButton, Int32 iconIndex, Int32 position)
-   at Wicresoft.NRemedy.VS10Addin.Connect.OnConnection(Object application, ext_ConnectMode connectMode, Object addInInst, Array& custom)System.ArgumentException: A Command with that name already exists.
-   at Wicresoft.NRemedy.VS10Addin.VSAddinUtil.AddNamedCommand2(CommandBar[] cmdBars, String cmdName, String buttonText, String toolTip, Boolean useMsoButton, Int32 iconIndex, Int32 position)
-   at Wicresoft.NRemedy.VS10Addin.Connect.OnConnection(Object application, ext_ConnectMode connectMode, Object addInInst, Array& custom)
