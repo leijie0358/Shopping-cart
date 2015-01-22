@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"> 
+  <head> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+    <title>Google 地图 JavaScript API 示例: 地图标记</title> 
+    <script src="http://ditu.google.cn/maps?file=api&amp;v=2&amp;key=&hl=zh-CN"
+            type="text/javascript"></script> 
+
+	<script type="text/javascript" src="application/views/scripts/jquery-1.5.1.js"></script>
+
+    <script type="text/javascript"> 
+    
+	var map;
+	function showAddress(address) {  
+		var geocoder = new GClientGeocoder();
+		geocoder.getLatLng(  
+			address,  
+			function(point) {  
+				if (!point) {  
+					alert(address + "没有找到"); 
+					// 设置中心坐标点
+					map.setCenter(new GLatLng(39.99135, 116.514066), 14);
+				} else {  
+					map.setCenter(point, 13);  
+					var marker = new GMarker(point);  
+					map.addOverlay(marker);  
+					marker.openInfoWindowHtml(address);  
+				}  
+			}  
+		);  
+	}  
+
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+        map = new GMap2(document.getElementById("map_canvas"));
+
+		// 平滑缩放
+		map.enableContinuousZoom();
+		// 滚轮缩放
+		map.enableScrollWheelZoom();
+		// 启用搜索控件 
+		//map.enableGoogleBar(); 
+		// 设置中心坐标点
+        map.setCenter(new GLatLng(39.99135, 116.514066), 14);
+
+      }
+    }
+ 
+    lastmarker = null;
+
+	$(document).ready(function(){
+		$('.map_custom_name').click(function(){
+			lat = $(this).attr('lat');
+			lng = $(this).attr('lng');
+			point = new GLatLng(lat, lng);
+			//var point = {lat,lng};
+			map.setCenter(point,14);
+			if(lastmarker!=null)
+			{
+				//alert('abc');
+				lastmarker.hide()
+			}
+			var marker = new GMarker(point);
+			map.addOverlay(marker);  
+			marker.openInfoWindowHtml($(this).attr('t')+"<br>"+$(this).attr('p'));  
+			lastmarker = marker; 
+		});
+		$('.map_mark').click(function(){
+			GEvent.addListener(
+				map, 
+				'click', 
+				function(overlay, latlng) 
+				{ 
+					var lat= latlng.lat(); 
+					var lon= latlng.lng();
+					alert(lat + "-" + lon);
+				}
+			);
+		});
+	});
+    </script> 
+	<style>
+		#map_canvas
+		{
+			margin:0px auto;
+			border:1px solid #aaaaaa;
+			width: 600px; 
+			height: 600px;
+			float:left
+		}
+
+		#map_container
+		{
+			margin:0px auto;
+			width:900px
+		}
+
+		#map_customer_list
+		{
+			border:0px solid black;
+			float:left;
+			margin-left:-30px;
+			margin-top:-18px;
+		}
+
+		#map_customer_list li
+		{
+			list-style:none;
+			padding-left:-10px;
+			cursor:pointer; 
+		}
+
+		#map_customer_list div
+		{
+			float:left;
+		}
+
+		#map_customer_list div.map_custom_name
+		{
+			width:80px;
+		}
+	</style>
+  </head> 
+
+<body onload="initialize()" onunload="GUnload()">
+	<div id="map_container">
+		<div id="map_canvas"></div> 
+		<div id="map_customer_list">
+			<ul>
+				<li>
+					<div  lat="31.69180" lng="118.4971" t="马鞍山第十七冶金建筑公司" p="好质量源于公司大" class="map_custom_name">十七冶</div>&nbsp;<div class="map_mark">标注</div>
+				</li>
+				<li>
+					<div  lat="31.6879" lng="118.5102" t="马钢" p="马钢就是牛" class="map_custom_name">马钢</div>&nbsp;<div class="map_mark">标注</div>
+				</li>
+			</ul>
+		</div> 
+		<!--div>
+			<input type="button" onclick="showAddress(document.getElementById('address').value)" value="定位" />
+			<input type="text" id="address" />
+		</div-->
+	</div>
+</body>

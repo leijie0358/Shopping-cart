@@ -1,0 +1,848 @@
+7876 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+7876 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+7876 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+7876 .|    |    Starting a new session 95akid3hc432foajoct5j69ab0 [Client.php:906]
+7876 .|    <= ''
+7876 .<= ''
+7876 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+7876 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+7876 .<= ''
+7876 .=> phpCAS::forceAuthentication() [login.php:12]
+7876 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+7876 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+7876 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+7876 .|    |    |    |    no user found [Client.php:1592]
+7876 .|    |    |    <= false
+7876 .|    |    |    no ticket found [Client.php:1453]
+7876 .|    |    <= false
+7876 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+7876 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+7876 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+7876 .|    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+7876 .|    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+7876 .|    |    |    <= 'https://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+7876 .|    |    |    Redirect to : https://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php [Client.php:1620]
+7876 .|    |    |    exit()
+7876 .|    |    |    -
+7876 .|    |    -
+7876 .|    -
+B0BC .START phpCAS-1.3.3 ****************** [CAS.php:438]
+B0BC .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+B0BC .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+B0BC .|    |    Starting a new session 95akid3hc432foajoct5j69ab0 [Client.php:906]
+B0BC .|    <= ''
+B0BC .<= ''
+B0BC .=> phpCAS::setNoCasServerValidation() [login.php:11]
+B0BC .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+B0BC .<= ''
+B0BC .=> phpCAS::forceAuthentication() [login.php:12]
+B0BC .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+B0BC .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+B0BC .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+B0BC .|    |    |    |    no user found [Client.php:1592]
+B0BC .|    |    |    <= false
+B0BC .|    |    |    no ticket found [Client.php:1453]
+B0BC .|    |    <= false
+B0BC .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+B0BC .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+B0BC .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+B0BC .|    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+B0BC .|    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+B0BC .|    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+B0BC .|    |    |    Redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php [Client.php:1620]
+B0BC .|    |    |    exit()
+B0BC .|    |    |    -
+B0BC .|    |    -
+B0BC .|    -
+2929 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+2929 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+2929 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+2929 .|    |    Starting a new session 95akid3hc432foajoct5j69ab0 [Client.php:906]
+2929 .|    |    Ticket 'ST-27428-9zBNsbtkyScesbnPooA9-sso01.example.org' found [Client.php:988]
+2929 .|    <= ''
+2929 .<= ''
+2929 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+2929 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+2929 .<= ''
+2929 .=> phpCAS::forceAuthentication() [login.php:12]
+2929 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+2929 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+2929 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+2929 .|    |    |    |    no user found [Client.php:1592]
+2929 .|    |    |    <= false
+2929 .|    |    |    CAS 2.0 ticket `ST-27428-9zBNsbtkyScesbnPooA9-sso01.example.org' is present [Client.php:1406]
+2929 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+2929 .|    |    |    |     [Client.php:3101]
+2929 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+2929 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+2929 .|    |    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+2929 .|    |    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+2929 .|    |    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+2929 .|    |    |    |    => CAS_Client::_readURL('http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php&ticket=ST-27428-9zBNsbtkyScesbnPooA9-sso01.example.org', NULL, NULL, NULL) [Client.php:3118]
+2929 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+2929 .|    |    |    |    |    |    Response Body: 
+2929 .|    |    |    |    |    |    
+2929 .|    |    |    |    |    |    
+2929 .|    |    |    |    |    |    
+2929 .|    |    |    |    |    |    
+2929 .|    |    |    |    |    |    
+2929 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+2929 .|    |    |    |    |    |    	<cas:authenticationSuccess>
+2929 .|    |    |    |    |    |    		<cas:user>leij</cas:user>
+2929 .|    |    |    |    |    |    		
+2929 .|    |    |    |    |    |    		
+2929 .|    |    |    |    |    |    		
+2929 .|    |    |    |    |    |    		   <cas:attributes>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:mail>leij@Ctrip.com</cas:mail>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:sn>lj雷捷</cas:sn>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:department>技术运营中心</cas:department>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:name>leij</cas:name>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:company>IT</cas:company>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:employee>B04165</cas:employee>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:memberOf>[CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com]</cas:memberOf>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:displayName>lj雷捷</cas:displayName>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:distinguishedName>CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com</cas:distinguishedName>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		     	<cas:city>北京</cas:city>
+2929 .|    |    |    |    |    |    		    
+2929 .|    |    |    |    |    |    		   </cas:attributes>
+2929 .|    |    |    |    |    |      		
+2929 .|    |    |    |    |    |    	</cas:authenticationSuccess>
+2929 .|    |    |    |    |    |    </cas:serviceResponse>
+2929 .|    |    |    |    |    |    
+2929 .|    |    |    |    |    |     [CurlRequest.php:84]
+2929 .|    |    |    |    |    <= true
+2929 .|    |    |    |    <= true
+2929 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+2929 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+2929 .|    |    |    |    |    Attribute [mail] = leij@Ctrip.com [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [sn] = lj雷捷 [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [department] = 技术运营中心 [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [name] = leij [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [company] = IT [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [employee] = B04165 [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [memberOf] = [CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com] [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [displayName] = lj雷捷 [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [distinguishedName] = CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com [Client.php:3270]
+2929 .|    |    |    |    |    Attribute [city] = 北京 [Client.php:3270]
+2929 .|    |    |    |    <= ''
+2929 .|    |    |    |    Storing Proxy List [Client.php:3185]
+2929 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+2929 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+2929 .|    |    |    |    <= true
+2929 .|    |    |    |    => CAS_Client::_renameSession('ST-27428-9zBNsbtkyScesbnPooA9-sso01.example.org') [Client.php:3220]
+2929 .|    |    |    |    |    Killing session: 95akid3hc432foajoct5j69ab0 [Client.php:3582]
+2929 .|    |    |    |    |    Starting session: ST-27428-9zBNsbtkyScesbnPooA9-sso01exampleorg [Client.php:3586]
+2929 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+2929 .|    |    |    |    <= ''
+2929 .|    |    |    <= true
+2929 .|    |    |    CAS 2.0 ticket `ST-27428-9zBNsbtkyScesbnPooA9-sso01.example.org' was validated [Client.php:1412]
+2929 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+2929 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+2929 .|    |    |    Prepare redirect to : http://localhost/onlinebx_1.1/sso/login.php [Client.php:1472]
+2929 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+2929 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+2929 .|    |    |    exit()
+2929 .|    |    |    -
+2929 .|    |    -
+2929 .|    -
+7634 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+7634 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+7634 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+7634 .|    |    Starting a new session ST-27428-9zBNsbtkyScesbnPooA9-sso01exampleorg [Client.php:906]
+7634 .|    <= ''
+7634 .<= ''
+7634 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+7634 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+7634 .<= ''
+7634 .=> phpCAS::forceAuthentication() [login.php:12]
+7634 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+7634 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+7634 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+7634 .|    |    |    |    user = `leij' [Client.php:1579]
+7634 .|    |    |    <= true
+7634 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+7634 .|    |    <= true
+7634 .|    |    no need to authenticate [Client.php:1247]
+7634 .|    <= true
+7634 .<= ''
+865D .START phpCAS-1.3.3 ****************** [CAS.php:438]
+865D .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+865D .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+865D .|    |    Starting a new session ST-27428-9zBNsbtkyScesbnPooA9-sso01exampleorg [Client.php:906]
+865D .|    <= ''
+865D .<= ''
+865D .=> phpCAS::setNoCasServerValidation() [login.php:11]
+865D .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+865D .<= ''
+865D .=> phpCAS::forceAuthentication() [login.php:12]
+865D .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+865D .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+865D .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+865D .|    |    |    |    user = `leij' [Client.php:1579]
+865D .|    |    |    <= true
+865D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+865D .|    |    <= true
+865D .|    |    no need to authenticate [Client.php:1247]
+865D .|    <= true
+865D .<= ''
+A51B .START phpCAS-1.3.3 ****************** [CAS.php:438]
+A51B .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+A51B .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+A51B .|    |    Starting a new session ST-27428-9zBNsbtkyScesbnPooA9-sso01exampleorg [Client.php:906]
+A51B .|    <= ''
+A51B .<= ''
+A51B .=> phpCAS::setNoCasServerValidation() [login.php:11]
+A51B .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+A51B .<= ''
+A51B .=> phpCAS::forceAuthentication() [login.php:12]
+A51B .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+A51B .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+A51B .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+A51B .|    |    |    |    user = `leij' [Client.php:1579]
+A51B .|    |    |    <= true
+A51B .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+A51B .|    |    <= true
+A51B .|    |    no need to authenticate [Client.php:1247]
+A51B .|    <= true
+A51B .<= ''
+A51B .=> phpCAS::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php',)) [login.php:18]
+A51B .|    => CAS_Client::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php',)) [CAS.php:1359]
+A51B .|    |    Prepare redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/logout?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Findex.php [Client.php:1653]
+A51B .|    |    exit()
+A51B .|    |    -
+A51B .|    -
+3917 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+3917 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+3917 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+3917 .|    |    Starting a new session ST-27428-9zBNsbtkyScesbnPooA9-sso01exampleorg [Client.php:906]
+3917 .|    <= ''
+3917 .<= ''
+3917 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+3917 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+3917 .<= ''
+3917 .=> phpCAS::forceAuthentication() [login.php:12]
+3917 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+3917 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+3917 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+3917 .|    |    |    |    no user found [Client.php:1592]
+3917 .|    |    |    <= false
+3917 .|    |    |    no ticket found [Client.php:1453]
+3917 .|    |    <= false
+3917 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+3917 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+3917 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+3917 .|    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+3917 .|    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+3917 .|    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+3917 .|    |    |    Redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php [Client.php:1620]
+3917 .|    |    |    exit()
+3917 .|    |    |    -
+3917 .|    |    -
+3917 .|    -
+EBA6 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+EBA6 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+EBA6 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+EBA6 .|    |    Starting a new session ST-27428-9zBNsbtkyScesbnPooA9-sso01exampleorg [Client.php:906]
+EBA6 .|    |    Ticket 'ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01.example.org' found [Client.php:988]
+EBA6 .|    <= ''
+EBA6 .<= ''
+EBA6 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+EBA6 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+EBA6 .<= ''
+EBA6 .=> phpCAS::forceAuthentication() [login.php:12]
+EBA6 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+EBA6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+EBA6 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+EBA6 .|    |    |    |    no user found [Client.php:1592]
+EBA6 .|    |    |    <= false
+EBA6 .|    |    |    CAS 2.0 ticket `ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01.example.org' is present [Client.php:1406]
+EBA6 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+EBA6 .|    |    |    |     [Client.php:3101]
+EBA6 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+EBA6 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+EBA6 .|    |    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+EBA6 .|    |    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+EBA6 .|    |    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+EBA6 .|    |    |    |    => CAS_Client::_readURL('http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php&ticket=ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01.example.org', NULL, NULL, NULL) [Client.php:3118]
+EBA6 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+EBA6 .|    |    |    |    |    |    Response Body: 
+EBA6 .|    |    |    |    |    |    
+EBA6 .|    |    |    |    |    |    
+EBA6 .|    |    |    |    |    |    
+EBA6 .|    |    |    |    |    |    
+EBA6 .|    |    |    |    |    |    
+EBA6 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+EBA6 .|    |    |    |    |    |    	<cas:authenticationSuccess>
+EBA6 .|    |    |    |    |    |    		<cas:user>leij</cas:user>
+EBA6 .|    |    |    |    |    |    		
+EBA6 .|    |    |    |    |    |    		
+EBA6 .|    |    |    |    |    |    		
+EBA6 .|    |    |    |    |    |    		   <cas:attributes>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:mail>leij@Ctrip.com</cas:mail>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:sn>lj雷捷</cas:sn>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:department>技术运营中心</cas:department>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:name>leij</cas:name>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:company>IT</cas:company>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:employee>B04165</cas:employee>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:memberOf>[CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com]</cas:memberOf>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:displayName>lj雷捷</cas:displayName>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:distinguishedName>CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com</cas:distinguishedName>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		     	<cas:city>北京</cas:city>
+EBA6 .|    |    |    |    |    |    		    
+EBA6 .|    |    |    |    |    |    		   </cas:attributes>
+EBA6 .|    |    |    |    |    |      		
+EBA6 .|    |    |    |    |    |    	</cas:authenticationSuccess>
+EBA6 .|    |    |    |    |    |    </cas:serviceResponse>
+EBA6 .|    |    |    |    |    |    
+EBA6 .|    |    |    |    |    |     [CurlRequest.php:84]
+EBA6 .|    |    |    |    |    <= true
+EBA6 .|    |    |    |    <= true
+EBA6 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+EBA6 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+EBA6 .|    |    |    |    |    Attribute [mail] = leij@Ctrip.com [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [sn] = lj雷捷 [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [department] = 技术运营中心 [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [name] = leij [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [company] = IT [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [employee] = B04165 [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [memberOf] = [CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com] [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [displayName] = lj雷捷 [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [distinguishedName] = CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com [Client.php:3270]
+EBA6 .|    |    |    |    |    Attribute [city] = 北京 [Client.php:3270]
+EBA6 .|    |    |    |    <= ''
+EBA6 .|    |    |    |    Storing Proxy List [Client.php:3185]
+EBA6 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+EBA6 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+EBA6 .|    |    |    |    <= true
+EBA6 .|    |    |    |    => CAS_Client::_renameSession('ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01.example.org') [Client.php:3220]
+EBA6 .|    |    |    |    |    Killing session: ST-27428-9zBNsbtkyScesbnPooA9-sso01exampleorg [Client.php:3582]
+EBA6 .|    |    |    |    |    Starting session: ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01exampleorg [Client.php:3586]
+EBA6 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+EBA6 .|    |    |    |    <= ''
+EBA6 .|    |    |    <= true
+EBA6 .|    |    |    CAS 2.0 ticket `ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01.example.org' was validated [Client.php:1412]
+EBA6 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+EBA6 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+EBA6 .|    |    |    Prepare redirect to : http://localhost/onlinebx_1.1/sso/login.php [Client.php:1472]
+EBA6 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+EBA6 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+EBA6 .|    |    |    exit()
+EBA6 .|    |    |    -
+EBA6 .|    |    -
+EBA6 .|    -
+DA43 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+DA43 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+DA43 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+DA43 .|    |    Starting a new session ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01exampleorg [Client.php:906]
+DA43 .|    <= ''
+DA43 .<= ''
+DA43 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+DA43 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+DA43 .<= ''
+DA43 .=> phpCAS::forceAuthentication() [login.php:12]
+DA43 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+DA43 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+DA43 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+DA43 .|    |    |    |    user = `leij' [Client.php:1579]
+DA43 .|    |    |    <= true
+DA43 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+DA43 .|    |    <= true
+DA43 .|    |    no need to authenticate [Client.php:1247]
+DA43 .|    <= true
+DA43 .<= ''
+8211 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+8211 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+8211 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+8211 .|    |    Starting a new session ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01exampleorg [Client.php:906]
+8211 .|    <= ''
+8211 .<= ''
+8211 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+8211 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+8211 .<= ''
+8211 .=> phpCAS::forceAuthentication() [login.php:12]
+8211 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+8211 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+8211 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+8211 .|    |    |    |    user = `leij' [Client.php:1579]
+8211 .|    |    |    <= true
+8211 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+8211 .|    |    <= true
+8211 .|    |    no need to authenticate [Client.php:1247]
+8211 .|    <= true
+8211 .<= ''
+8211 .=> phpCAS::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php',)) [login.php:18]
+8211 .|    => CAS_Client::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php',)) [CAS.php:1359]
+8211 .|    |    Prepare redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/logout?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Findex.php [Client.php:1653]
+8211 .|    |    exit()
+8211 .|    |    -
+8211 .|    -
+07C2 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+07C2 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+07C2 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+07C2 .|    |    Starting a new session ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01exampleorg [Client.php:906]
+07C2 .|    <= ''
+07C2 .<= ''
+07C2 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+07C2 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+07C2 .<= ''
+07C2 .=> phpCAS::forceAuthentication() [login.php:12]
+07C2 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+07C2 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+07C2 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+07C2 .|    |    |    |    no user found [Client.php:1592]
+07C2 .|    |    |    <= false
+07C2 .|    |    |    no ticket found [Client.php:1453]
+07C2 .|    |    <= false
+07C2 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+07C2 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+07C2 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+07C2 .|    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+07C2 .|    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+07C2 .|    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+07C2 .|    |    |    Redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php [Client.php:1620]
+07C2 .|    |    |    exit()
+07C2 .|    |    |    -
+07C2 .|    |    -
+07C2 .|    -
+E442 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+E442 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+E442 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+E442 .|    |    Starting a new session ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01exampleorg [Client.php:906]
+E442 .|    |    Ticket 'ST-27440-fFeBOqxBf7zxPIzWuafD-sso01.example.org' found [Client.php:988]
+E442 .|    <= ''
+E442 .<= ''
+E442 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+E442 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+E442 .<= ''
+E442 .=> phpCAS::forceAuthentication() [login.php:12]
+E442 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+E442 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+E442 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+E442 .|    |    |    |    no user found [Client.php:1592]
+E442 .|    |    |    <= false
+E442 .|    |    |    CAS 2.0 ticket `ST-27440-fFeBOqxBf7zxPIzWuafD-sso01.example.org' is present [Client.php:1406]
+E442 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+E442 .|    |    |    |     [Client.php:3101]
+E442 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+E442 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+E442 .|    |    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+E442 .|    |    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+E442 .|    |    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+E442 .|    |    |    |    => CAS_Client::_readURL('http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php&ticket=ST-27440-fFeBOqxBf7zxPIzWuafD-sso01.example.org', NULL, NULL, NULL) [Client.php:3118]
+E442 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+E442 .|    |    |    |    |    |    Response Body: 
+E442 .|    |    |    |    |    |    
+E442 .|    |    |    |    |    |    
+E442 .|    |    |    |    |    |    
+E442 .|    |    |    |    |    |    
+E442 .|    |    |    |    |    |    
+E442 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+E442 .|    |    |    |    |    |    	<cas:authenticationSuccess>
+E442 .|    |    |    |    |    |    		<cas:user>leij</cas:user>
+E442 .|    |    |    |    |    |    		
+E442 .|    |    |    |    |    |    		
+E442 .|    |    |    |    |    |    		
+E442 .|    |    |    |    |    |    		   <cas:attributes>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:mail>leij@Ctrip.com</cas:mail>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:sn>lj雷捷</cas:sn>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:department>技术运营中心</cas:department>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:name>leij</cas:name>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:company>IT</cas:company>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:employee>B04165</cas:employee>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:memberOf>[CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com]</cas:memberOf>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:displayName>lj雷捷</cas:displayName>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:distinguishedName>CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com</cas:distinguishedName>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		     	<cas:city>北京</cas:city>
+E442 .|    |    |    |    |    |    		    
+E442 .|    |    |    |    |    |    		   </cas:attributes>
+E442 .|    |    |    |    |    |      		
+E442 .|    |    |    |    |    |    	</cas:authenticationSuccess>
+E442 .|    |    |    |    |    |    </cas:serviceResponse>
+E442 .|    |    |    |    |    |    
+E442 .|    |    |    |    |    |     [CurlRequest.php:84]
+E442 .|    |    |    |    |    <= true
+E442 .|    |    |    |    <= true
+E442 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+E442 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+E442 .|    |    |    |    |    Attribute [mail] = leij@Ctrip.com [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [sn] = lj雷捷 [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [department] = 技术运营中心 [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [name] = leij [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [company] = IT [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [employee] = B04165 [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [memberOf] = [CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com] [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [displayName] = lj雷捷 [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [distinguishedName] = CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com [Client.php:3270]
+E442 .|    |    |    |    |    Attribute [city] = 北京 [Client.php:3270]
+E442 .|    |    |    |    <= ''
+E442 .|    |    |    |    Storing Proxy List [Client.php:3185]
+E442 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+E442 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+E442 .|    |    |    |    <= true
+E442 .|    |    |    |    => CAS_Client::_renameSession('ST-27440-fFeBOqxBf7zxPIzWuafD-sso01.example.org') [Client.php:3220]
+E442 .|    |    |    |    |    Killing session: ST-27434-ycmvLxU2xu5DOkBObaQZ-sso01exampleorg [Client.php:3582]
+E442 .|    |    |    |    |    Starting session: ST-27440-fFeBOqxBf7zxPIzWuafD-sso01exampleorg [Client.php:3586]
+E442 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+E442 .|    |    |    |    <= ''
+E442 .|    |    |    <= true
+E442 .|    |    |    CAS 2.0 ticket `ST-27440-fFeBOqxBf7zxPIzWuafD-sso01.example.org' was validated [Client.php:1412]
+E442 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+E442 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+E442 .|    |    |    Prepare redirect to : http://localhost/onlinebx_1.1/sso/login.php [Client.php:1472]
+E442 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+E442 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+E442 .|    |    |    exit()
+E442 .|    |    |    -
+E442 .|    |    -
+E442 .|    -
+4F4F .START phpCAS-1.3.3 ****************** [CAS.php:438]
+4F4F .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+4F4F .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+4F4F .|    |    Starting a new session ST-27440-fFeBOqxBf7zxPIzWuafD-sso01exampleorg [Client.php:906]
+4F4F .|    <= ''
+4F4F .<= ''
+4F4F .=> phpCAS::setNoCasServerValidation() [login.php:11]
+4F4F .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+4F4F .<= ''
+4F4F .=> phpCAS::forceAuthentication() [login.php:12]
+4F4F .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+4F4F .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+4F4F .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+4F4F .|    |    |    |    user = `leij' [Client.php:1579]
+4F4F .|    |    |    <= true
+4F4F .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+4F4F .|    |    <= true
+4F4F .|    |    no need to authenticate [Client.php:1247]
+4F4F .|    <= true
+4F4F .<= ''
+8DDA .START phpCAS-1.3.3 ****************** [CAS.php:438]
+8DDA .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+8DDA .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+8DDA .|    |    Starting a new session ST-27440-fFeBOqxBf7zxPIzWuafD-sso01exampleorg [Client.php:906]
+8DDA .|    <= ''
+8DDA .<= ''
+8DDA .=> phpCAS::setNoCasServerValidation() [login.php:11]
+8DDA .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+8DDA .<= ''
+8DDA .=> phpCAS::forceAuthentication() [login.php:12]
+8DDA .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+8DDA .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+8DDA .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+8DDA .|    |    |    |    user = `leij' [Client.php:1579]
+8DDA .|    |    |    <= true
+8DDA .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+8DDA .|    |    <= true
+8DDA .|    |    no need to authenticate [Client.php:1247]
+8DDA .|    <= true
+8DDA .<= ''
+8DDA .=> phpCAS::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php/wxsheet/index#',)) [login.php:18]
+8DDA .|    => CAS_Client::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php/wxsheet/index#',)) [CAS.php:1359]
+8DDA .|    |    Prepare redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/logout?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Findex.php%2Fwxsheet%2Findex%23 [Client.php:1653]
+8DDA .|    |    exit()
+8DDA .|    |    -
+8DDA .|    -
+B039 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+B039 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:10]
+B039 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+B039 .|    |    Starting a new session ST-27524-YFsMtg0ejYBTrfgaXvLn-sso01exampleorg [Client.php:906]
+B039 .|    <= ''
+B039 .<= ''
+B039 .=> phpCAS::setNoCasServerValidation() [login.php:11]
+B039 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+B039 .<= ''
+B039 .=> phpCAS::forceAuthentication() [login.php:12]
+B039 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+B039 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+B039 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+B039 .|    |    |    |    user = `leij' [Client.php:1579]
+B039 .|    |    |    <= true
+B039 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+B039 .|    |    <= true
+B039 .|    |    no need to authenticate [Client.php:1247]
+B039 .|    <= true
+B039 .<= ''
+124E .START phpCAS-1.3.3 ****************** [CAS.php:438]
+124E .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+124E .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+124E .|    |    Starting a new session ST-27873-U7Q40Gnph3lpbIJbIOkF-sso01exampleorg [Client.php:906]
+124E .|    <= ''
+124E .<= ''
+124E .=> phpCAS::setNoCasServerValidation() [login.php:9]
+124E .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+124E .<= ''
+124E .=> phpCAS::forceAuthentication() [login.php:10]
+124E .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+124E .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+124E .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+124E .|    |    |    |    user = `leij' [Client.php:1579]
+124E .|    |    |    <= true
+124E .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+124E .|    |    <= true
+124E .|    |    no need to authenticate [Client.php:1247]
+124E .|    <= true
+124E .<= ''
+1CBF .START phpCAS-1.3.3 ****************** [CAS.php:438]
+1CBF .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+1CBF .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+1CBF .|    |    Starting a new session vpsa7ejl2l5gjmk629hp8ssnf5 [Client.php:906]
+1CBF .|    <= ''
+1CBF .<= ''
+1CBF .=> phpCAS::setNoCasServerValidation() [login.php:9]
+1CBF .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+1CBF .<= ''
+1CBF .=> phpCAS::forceAuthentication() [login.php:10]
+1CBF .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+1CBF .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+1CBF .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+1CBF .|    |    |    |    no user found [Client.php:1592]
+1CBF .|    |    |    <= false
+1CBF .|    |    |    no ticket found [Client.php:1453]
+1CBF .|    |    <= false
+1CBF .|    |    => CAS_Client::redirectToCas(false) [Client.php:1254]
+1CBF .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1613]
+1CBF .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+1CBF .|    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+1CBF .|    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+1CBF .|    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+1CBF .|    |    |    Redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/login?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php [Client.php:1620]
+1CBF .|    |    |    exit()
+1CBF .|    |    |    -
+1CBF .|    |    -
+1CBF .|    -
+42C1 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+42C1 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+42C1 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+42C1 .|    |    Starting a new session vpsa7ejl2l5gjmk629hp8ssnf5 [Client.php:906]
+42C1 .|    |    Ticket 'ST-24866-NZI3DRJHlNbKQ3QLSvTm-sso01.example.org' found [Client.php:988]
+42C1 .|    <= ''
+42C1 .<= ''
+42C1 .=> phpCAS::setNoCasServerValidation() [login.php:9]
+42C1 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+42C1 .<= ''
+42C1 .=> phpCAS::forceAuthentication() [login.php:10]
+42C1 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+42C1 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+42C1 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+42C1 .|    |    |    |    no user found [Client.php:1592]
+42C1 .|    |    |    <= false
+42C1 .|    |    |    CAS 2.0 ticket `ST-24866-NZI3DRJHlNbKQ3QLSvTm-sso01.example.org' is present [Client.php:1406]
+42C1 .|    |    |    => CAS_Client::validateCAS20('', NULL, NULL) [Client.php:1409]
+42C1 .|    |    |    |     [Client.php:3101]
+42C1 .|    |    |    |    => CAS_Client::getServerServiceValidateURL() [Client.php:3108]
+42C1 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:453]
+42C1 .|    |    |    |    |    |    Final URI: http://localhost/onlinebx_1.1/sso/login.php [Client.php:3466]
+42C1 .|    |    |    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+42C1 .|    |    |    |    <= 'http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php'
+42C1 .|    |    |    |    => CAS_Client::_readURL('http://cas.uat.qa.nt.ctripcorp.com:80/caso/serviceValidate?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Fsso%2Flogin.php&ticket=ST-24866-NZI3DRJHlNbKQ3QLSvTm-sso01.example.org', NULL, NULL, NULL) [Client.php:3118]
+42C1 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+42C1 .|    |    |    |    |    |    Response Body: 
+42C1 .|    |    |    |    |    |    
+42C1 .|    |    |    |    |    |    
+42C1 .|    |    |    |    |    |    
+42C1 .|    |    |    |    |    |    
+42C1 .|    |    |    |    |    |    
+42C1 .|    |    |    |    |    |    <cas:serviceResponse xmlns:cas='http://www.yale.edu/tp/cas'>
+42C1 .|    |    |    |    |    |    	<cas:authenticationSuccess>
+42C1 .|    |    |    |    |    |    		<cas:user>leij</cas:user>
+42C1 .|    |    |    |    |    |    		
+42C1 .|    |    |    |    |    |    		
+42C1 .|    |    |    |    |    |    		
+42C1 .|    |    |    |    |    |    		   <cas:attributes>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:mail>leij@Ctrip.com</cas:mail>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:sn>lj雷捷</cas:sn>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:department>技术运营中心</cas:department>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:name>leij</cas:name>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:company>IT</cas:company>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:employee>B04165</cas:employee>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:memberOf>[CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com]</cas:memberOf>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:displayName>lj雷捷</cas:displayName>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:distinguishedName>CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com</cas:distinguishedName>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		     	<cas:city>北京</cas:city>
+42C1 .|    |    |    |    |    |    		    
+42C1 .|    |    |    |    |    |    		   </cas:attributes>
+42C1 .|    |    |    |    |    |      		
+42C1 .|    |    |    |    |    |    	</cas:authenticationSuccess>
+42C1 .|    |    |    |    |    |    </cas:serviceResponse>
+42C1 .|    |    |    |    |    |    
+42C1 .|    |    |    |    |    |     [CurlRequest.php:84]
+42C1 .|    |    |    |    |    <= true
+42C1 .|    |    |    |    <= true
+42C1 .|    |    |    |    => CAS_Client::_readExtraAttributesCas20(DOMNodeList) [Client.php:3176]
+42C1 .|    |    |    |    |    Found nested jasig style attributes [Client.php:3263]
+42C1 .|    |    |    |    |    Attribute [mail] = leij@Ctrip.com [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [sn] = lj雷捷 [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [department] = 技术运营中心 [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [name] = leij [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [company] = IT [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [employee] = B04165 [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [memberOf] = [CN=技术运营中心BJ,OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=AllowMailOut,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=AllowMailIn,OU=MailControlGroup,OU=UserGroup,DC=cn1,DC=global,DC=ctrip,DC=com, CN=IT Dep(Beijing),OU=Groups,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com, CN=Ctrip Beijing,OU=Groups,OU=人力资源部,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com] [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [displayName] = lj雷捷 [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [distinguishedName] = CN=lj雷捷,OU=User,OU=技术运营中心,OU=北京,DC=cn2,DC=global,DC=ctrip,DC=com [Client.php:3270]
+42C1 .|    |    |    |    |    Attribute [city] = 北京 [Client.php:3270]
+42C1 .|    |    |    |    <= ''
+42C1 .|    |    |    |    Storing Proxy List [Client.php:3185]
+42C1 .|    |    |    |    => CAS_ProxyChain_AllowedList::isProxyListAllowed(array ()) [Client.php:3188]
+42C1 .|    |    |    |    |    No proxies were found in the response [AllowedList.php:81]
+42C1 .|    |    |    |    <= true
+42C1 .|    |    |    |    => CAS_Client::_renameSession('ST-24866-NZI3DRJHlNbKQ3QLSvTm-sso01.example.org') [Client.php:3220]
+42C1 .|    |    |    |    |    Killing session: vpsa7ejl2l5gjmk629hp8ssnf5 [Client.php:3582]
+42C1 .|    |    |    |    |    Starting session: ST-24866-NZI3DRJHlNbKQ3QLSvTm-sso01exampleorg [Client.php:3586]
+42C1 .|    |    |    |    |    Restoring old session vars [Client.php:3589]
+42C1 .|    |    |    |    <= ''
+42C1 .|    |    |    <= true
+42C1 .|    |    |    CAS 2.0 ticket `ST-24866-NZI3DRJHlNbKQ3QLSvTm-sso01.example.org' was validated [Client.php:1412]
+42C1 .|    |    |    => CAS_Client::getURL() [Client.php:1472]
+42C1 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+42C1 .|    |    |    Prepare redirect to : http://localhost/onlinebx_1.1/sso/login.php [Client.php:1472]
+42C1 .|    |    |    => CAS_Client::getURL() [Client.php:1474]
+42C1 .|    |    |    <= 'http://localhost/onlinebx_1.1/sso/login.php'
+42C1 .|    |    |    exit()
+42C1 .|    |    |    -
+42C1 .|    |    -
+42C1 .|    -
+A9FA .START phpCAS-1.3.3 ****************** [CAS.php:438]
+A9FA .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+A9FA .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+A9FA .|    |    Starting a new session ST-24866-NZI3DRJHlNbKQ3QLSvTm-sso01exampleorg [Client.php:906]
+A9FA .|    <= ''
+A9FA .<= ''
+A9FA .=> phpCAS::setNoCasServerValidation() [login.php:9]
+A9FA .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+A9FA .<= ''
+A9FA .=> phpCAS::forceAuthentication() [login.php:10]
+A9FA .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+A9FA .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+A9FA .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+A9FA .|    |    |    |    user = `leij' [Client.php:1579]
+A9FA .|    |    |    <= true
+A9FA .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+A9FA .|    |    <= true
+A9FA .|    |    no need to authenticate [Client.php:1247]
+A9FA .|    <= true
+A9FA .<= ''
+A577 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+A577 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+A577 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+A577 .|    |    Starting a new session ST-27873-U7Q40Gnph3lpbIJbIOkF-sso01exampleorg [Client.php:906]
+A577 .|    <= ''
+A577 .<= ''
+A577 .=> phpCAS::setNoCasServerValidation() [login.php:9]
+A577 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+A577 .<= ''
+A577 .=> phpCAS::forceAuthentication() [login.php:10]
+A577 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+A577 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+A577 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+A577 .|    |    |    |    user = `leij' [Client.php:1579]
+A577 .|    |    |    <= true
+A577 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+A577 .|    |    <= true
+A577 .|    |    no need to authenticate [Client.php:1247]
+A577 .|    <= true
+A577 .<= ''
+4BC6 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+4BC6 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+4BC6 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+4BC6 .|    |    Starting a new session ST-27873-U7Q40Gnph3lpbIJbIOkF-sso01exampleorg [Client.php:906]
+4BC6 .|    <= ''
+4BC6 .<= ''
+4BC6 .=> phpCAS::setNoCasServerValidation() [login.php:9]
+4BC6 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+4BC6 .<= ''
+4BC6 .=> phpCAS::forceAuthentication() [login.php:10]
+4BC6 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+4BC6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+4BC6 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+4BC6 .|    |    |    |    user = `leij' [Client.php:1579]
+4BC6 .|    |    |    <= true
+4BC6 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+4BC6 .|    |    <= true
+4BC6 .|    |    no need to authenticate [Client.php:1247]
+4BC6 .|    <= true
+4BC6 .<= ''
+A9C7 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+A9C7 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+A9C7 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+A9C7 .|    |    Starting a new session ST-35917-MhKnfQWsI9mGG4ogqUt5-sso01exampleorg [Client.php:906]
+A9C7 .|    <= ''
+A9C7 .<= ''
+A9C7 .=> phpCAS::setNoCasServerValidation() [login.php:9]
+A9C7 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+A9C7 .<= ''
+A9C7 .=> phpCAS::forceAuthentication() [login.php:10]
+A9C7 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+A9C7 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+A9C7 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+A9C7 .|    |    |    |    user = `leij' [Client.php:1579]
+A9C7 .|    |    |    <= true
+A9C7 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+A9C7 .|    |    <= true
+A9C7 .|    |    no need to authenticate [Client.php:1247]
+A9C7 .|    <= true
+A9C7 .<= ''
+6876 .START phpCAS-1.3.3 ****************** [CAS.php:438]
+6876 .=> phpCAS::client('2.0', 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso') [login.php:8]
+6876 .|    => CAS_Client::__construct('2.0', false, 'cas.uat.qa.nt.ctripcorp.com', 80, 'caso', true) [CAS.php:340]
+6876 .|    |    Starting a new session ST-35917-MhKnfQWsI9mGG4ogqUt5-sso01exampleorg [Client.php:906]
+6876 .|    <= ''
+6876 .<= ''
+6876 .=> phpCAS::setNoCasServerValidation() [login.php:9]
+6876 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1553]
+6876 .<= ''
+6876 .=> phpCAS::forceAuthentication() [login.php:10]
+6876 .|    => CAS_Client::forceAuthentication() [CAS.php:1015]
+6876 .|    |    => CAS_Client::isAuthenticated() [Client.php:1245]
+6876 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1356]
+6876 .|    |    |    |    user = `leij' [Client.php:1579]
+6876 .|    |    |    <= true
+6876 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1380]
+6876 .|    |    <= true
+6876 .|    |    no need to authenticate [Client.php:1247]
+6876 .|    <= true
+6876 .<= ''
+6876 .=> phpCAS::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php',)) [login.php:17]
+6876 .|    => CAS_Client::logout(array (  'service' => 'http://localhost/onlinebx_1.1/index.php',)) [CAS.php:1359]
+6876 .|    |    Prepare redirect to : http://cas.uat.qa.nt.ctripcorp.com:80/caso/logout?service=http%3A%2F%2Flocalhost%2Fonlinebx_1.1%2Findex.php [Client.php:1653]
+6876 .|    |    exit()
+6876 .|    |    -
+6876 .|    -

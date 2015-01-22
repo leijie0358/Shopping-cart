@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.5.1.js"></script>
+
+
+<script type="text/javascript">
+
+$.ajaxSetup ({
+	cache: false //关闭AJAX相应的缓存
+});
+
+$.ajax({
+	type: "get",
+	url: "political_area.js",
+	//dataType : "json",
+	beforeSend: function(XMLHttpRequest){
+	},
+	success: function(data, textStatus){
+		//eval("a ='" + data + "'");
+		data = data.replace(/\r/g,"");
+		data = data.replace(/\n/g,"");
+		data = data.replace(/\r\n/g,"");
+		data = data.replace(/\s/g,"");
+		eval("pa =" + data + ";");
+		//alert(pa.provinces.length);
+		
+	},
+	complete: function(XMLHttpRequest, textStatus){
+	},
+	error: function(){
+		//alert("ddd");
+	}
+});
+$(document).ready(function(){
+  $("p").click(function(){
+  $(this).hide();
+  });
+});
+</script>
+</head>
+
+<body>
+<p>If you click on me, I will disappear.</p>
+</body>
+
+</html>
